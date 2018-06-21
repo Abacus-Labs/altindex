@@ -1,10 +1,10 @@
 {
-  "name": "rebalance-ethereum",
+  "name": "altindex",
   "version": "1.0.0",
-  "description": "Smart contract + node scripts for storing crypto-index rebalancing on the Ethereum blockchain.",
+  "description": "Smart contract + node scripts for storing crypto-index rebalance on the Ethereum blockchain.",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Altindex/crypto-index-ethereum.git"
+    "url": "git@github.com:Abacus-Labs/altindex.git"
   },
   "scripts": {
     "test": "mocha",
