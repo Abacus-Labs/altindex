@@ -1,0 +1,34 @@
+{
+  "name": "rebalance-ethereum",
+  "version": "1.0.0",
+  "description": "Smart contract + node scripts for storing crypto-index rebalancing on the Ethereum blockchain.",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Altindex/crypto-index-ethereum.git"
+  },
+  "scripts": {
+    "test": "mocha",
+    "compile": "node scripts/compile.js",
+    "deploy:test": "node scripts/deploy.js",
+    "deploy:mainnet": "node scripts/deploy.js mainnet",
+    "update:test": "node scripts/updateRebalance.js",
+    "update:mainnet": "node scripts/updateRebalance.js mainnet"
+  },
+  "author": "Mike Kascel <mkasceldev@protonmail.com> (https://github.com/mkascel)",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^5.0.0",
+    "md5-file": "^4.0.0",
+    "nodemailer": "^4.6.4",
+    "solc": "^0.4.24",
+    "superagent": "^3.8.3",
+    "truffle-hdwallet-provider": "0.0.3",
+    "web3": "^1.0.0-beta.34",
+    "web3-provider-engine": "^14.0.6",
+    "winston": "^3.0.0-rc5"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.1.0",
+    "mocha": "^5.1.1"
+  }
+}
