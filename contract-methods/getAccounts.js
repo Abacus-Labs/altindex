@@ -3,7 +3,7 @@ const web3 = require('../web3');
 
 let accounts;
 module.exports = async () => {
-  // Return singleton after accounts fetched.
+  // Returned cached if already retrieved.
   if (accounts) return accounts;
 
   logger.info('Getting wallet accounts');

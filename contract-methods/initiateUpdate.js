@@ -1,4 +1,3 @@
-const web3 = require('../web3');
 const getAccounts = require('./getAccounts');
 const rebalance = require('../rebalance');
 const network = require('../constants/network');

@@ -82,13 +82,14 @@ module.exports = async () => {
     return err;
   }
 
+  logger.info(`Document fingerprint set. ${tx.transactionHash}`);
+
   // Workaround for Infura issue
   // https://github.com/trufflesuite/truffle/issues/763
   logger.info('Waiting for Infura...')
   await new Promise(resolve => setTimeout(() => resolve(), 60000));
   logger.info('Finished waiting')
 
-  logger.info(`Document fingerprint set. ${tx.transactionHash}`);
   addSpentGas(tx);
 
   logger.info('Setting document URL');
@@ -105,12 +106,13 @@ module.exports = async () => {
     return err;
   }
 
+  logger.info(`Document URL set. ${tx.transactionHash}`);
+
   // Workaround for Infura issue
   // https://github.com/trufflesuite/truffle/issues/763
   logger.info('Waiting for Infura...')
   await new Promise(resolve => setTimeout(() => resolve(), 60000));
   logger.info('Finished waiting')
 
-  logger.info(`Document URL set. ${tx.transactionHash}`);
   addSpentGas(tx);
 }
